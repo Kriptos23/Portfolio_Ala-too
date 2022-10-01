@@ -1,0 +1,95 @@
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+body
+{
+    
+    display: block;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: #008080 ;
+    
+}
+
+h1
+{
+
+    
+    position: relative;
+    font-size: 33px;
+    color: #008080;
+    -webkit-text-stroke: 0.1vw #336060;
+
+}
+h1::before
+{
+    
+    content: attr(data-text);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    color: #18212c;
+    -webkit-text-stroke: 0vw #336060;
+    border-right: 2px solid #18212c;
+    overflow: hidden;
+    animation: animate 10s linear infinite;
+    
+ 
+}
+
+@keyframes animate
+{
+    0%
+    {
+       width: 0; 
+    }
+    70%
+    {
+        width: 100%;
+    }
+}
+img {
+    border-radius: 50%;
+  }
+
+h2
+{
+    font-size: 30px;
+    font-family: sans-serif;
+    text-align: center;
+}
+
+h3 
+{
+    font-size: 30px;
+    font-family: sans-serif;
+}
+
+h4
+{
+    font-size: 20px;
+    font-family: sans-serif;
+    text-transform: uppercase;
+}
+
+p
+{
+    line-height: 1.2 ;
+
+}
+
+.ava img
+{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  
+
+}
