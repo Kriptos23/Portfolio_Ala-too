@@ -1,12 +1,3 @@
-/*var clicks = 0;
-
-function button() 
-{
-  clicks++;
-  console.log(clicks);
-  document.getElementsByClassName("Clicker")[0].firstChild.data = "Clicks: " + clicks;
-}*/
-
 const cat_btn = document.getElementById('cat_btn');
 const dog_btn = document.getElementById('fact_btn');
 const cat_result = document.getElementById('cat_result');
@@ -33,3 +24,13 @@ function getRandomFact() {
 			
 		});
 }
+
+var clicks = 0;
+
+function button() 
+{
+  clicks++;
+  console.log(clicks);
+  document.getElementsByClassName("Clicker")[0].firstChild.data = "Clicks: " + clicks;
+}
+

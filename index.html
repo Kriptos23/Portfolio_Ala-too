@@ -4,26 +4,41 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio</title>
     <link rel="stylesheet" href="style.css">
-    <script src="portfolio.js"></script>
+    <script src="portfolio.js" defer></script>
+    <title>Portfolio</title>
+    
+    <!-- Here is fonts -->
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Trispace&display=swap" rel="stylesheet">
 </head>
 
 <body>
 
-    <div class="ava"><img src="img/animation.gif" width = "250" height ="230" alt="image"></div>
+  <div class="ava"><img src="img/animation.gif" width = "250" height ="230" alt="image"></div>
     
-   <!--не могу сохранить    квака а к-->
+   <!--не могу сохранить  s  квака а к-->
 
     <!--class="header"-->
     <div class="anim">
-      <h1  data-text="Daniel_Kuvanychbekov">Daniel_Kuvanychbekov</h1>
+      <h1  class="name_anime" data-text="Daniel_Kuvanychbekov">Daniel_Kuvanychbekov</h1>
     </div>
+
+    <h1><strong>Website is not ready yet, that's why it so ugly. Yet here is Fetch API and just a simple button tho</strong></h1>
+
     <div class="main_body">
-      <h2>Bio</h2>
-      <p>My name is Daniel, but you can call me prince sir. I am from Midland. I am 18 years old, right age for the young prince. My mother is the teacher Queen and father is the dentist King. At the moment I am studying in Ala-Too university. I love playing video games and reading books as all people do. Have nothing to add more.</p>
-      <h2>skills</h2>
-      <p>I have many skills, some of them you can find in a list below</p>
+      <div id="bio_skills">
+        <div id="Bio" ><h2>Bio</h2>
+          <p >My name is Daniel, but you can call me prince sir. I am from Midland. I am 18 years old, right age for the young prince. My mother is the teacher Queen and father is the dentist King. At the moment I am studying in Ala-Too university. I love playing video games and reading books as all people do. Have nothing to add more.</p></div>
+      <div id="skills">
+        <h2>skills</h2>
+        <p>I have many skills, some of them you can find in a list below</p>
+      </div>
+      </div>
+      
+
       <h2>Works</h2>
       <p>I have'nt worked yet :/</p>
       
@@ -65,31 +80,29 @@
           </tr>
   
         </table>
-        <!-- <div class="button_counter">
+    <div class="button_counter">
           <button id="clickbutton" onclick="button()">Click me</button>
   
   
           <p class="Clicker"  id ="clicks">Clicks: 0</p>
-        </div>-->
+        </div>
     </div>
     
+  <div class="API">
+    <div class="results">
+        <div id="cat_result" class="result">
+            <p>Random Cat Placeholder</p>
+        </div>
+        <div id="fact_result" class="result">
+            <p>Random Fact Placeholder</p>
+        </div>
+    </div>
     
-      
-
-    <div class="API">
-      <div class="results">
-          <div id="cat_result" class="result">
-              <p>Random Cat Placeholder</p>
-          </div>
-          <div id="fact_result" class="result">
-              <p>Random Fact Placeholder</p>
-          </div>
-      </div>
-      
-      <div class="buttons">
-          <button id="cat_btn">Get Cat!</button>
-          <button id="fact_btn">Get a Cat Fact!</button>
-      </div>
+    <div class="buttons">
+        <button id="cat_btn">Get Cat!</button>
+        <button id="fact_btn">Get a Cat Fact!</button>
+    </div>
+  </div>
 
 </body>
 </html>
