@@ -5,14 +5,25 @@
     box-sizing: border-box;
     
 }
-body
+
+.main_body
+{
+    background-image: linear-gradient( 180deg,  #08a958, #05763e);
+}
+
+.ava
+{
+    background-image: linear-gradient( 180deg,  #024b27, #08a958 );
+}
+.anim
 {
     /* Just checking jnjibfbi fgbdfdf*/
     display: block;
     justify-content: center;
     align-items: center;
-    min-height: 100vh;
-    background: #008080 ;
+    text-align: center;
+    min-height: 10px;
+    background: #08a958;
     
 }
 
@@ -30,18 +41,19 @@ h1::before
 {
     
     content: attr(data-text);
-    position: absolute;
-    top: 0;
-    left: 0;
+    position:absolute;
+    margin-left: auto;
+    margin-right: auto;
+
+    text-align: center;
+    
     width: 0;
     height: 100%;
     color: #18212c;
     -webkit-text-stroke: 0vw #336060;
     border-right: 2px solid #18212c;
     overflow: hidden;
-    animation: animate 10s linear infinite;
-    
- 
+    animation: animate 10s linear infinite; 
 }
 
 @keyframes animate
@@ -52,7 +64,7 @@ h1::before
     }
     70%
     {
-        width: 23%;
+        width: 16.5%;
     }
 }
 img {
@@ -93,8 +105,81 @@ p
   
  
 }
-.button
+
+
+.button_counter
 {
     margin-left: 10px;
     margin-top: 10px;
+}
+
+@import url('https://fonts.googleapis.com/css?family=Open+Sans&display=swap');
+
+
+.API {
+	background-image: linear-gradient( 180deg,  rgb(158, 95, 95) 92% , rgb(112, 42, 42) 92% );
+	font-family: 'Open Sans', sans-serif;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+	height: 100vh;
+	margin: 0;
+}
+
+.results {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+    color: rgb(194, 112, 112);
+}
+
+.result {
+	background-color: #fff;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	margin: 10px;
+	height: 400px;
+	width: 300px;
+    font-family: 'Trispace', sans-serif;
+}
+
+
+
+.result img {
+	object-fit: cover;
+	height: 100%;
+	width: 100%;
+}
+
+.buttons {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+#fact_result
+{
+    color: rgb(81, 148, 126);
+    font-family: 'Trispace', sans-serif;
+}
+
+button {
+	background-color: darksalmon;
+	border: 0;
+	border-radius: 4px;
+	color: #fff;
+	font-size: 18px;
+	padding: 10px;
+	margin: 10px;
+	width: 300px;
+}
+
+button:active {
+	transform: scale(0.98);
+}
+
+button:focus {
+	outline: none
 }
