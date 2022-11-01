@@ -74,7 +74,7 @@ h1
     }
     70%
     {
-        width: 16.5%;
+        width: 21%;
     }
 }
 
@@ -195,7 +195,7 @@ button:focus {
 	outline: none
 }
 
-#bio_skills
+#bio_Bebop
 {
     width: 2100px;
     height: 300px;
@@ -218,3 +218,61 @@ button:focus {
     float:none;
     border: 1px solid green;
 }
+
+
+
+  /* Here is css for phones*/
+  @media only screen and ( max-width: 391px) 
+  {
+    @keyframes animate
+    {
+        0%
+        {
+           width: 0; 
+        }
+        70%
+        {
+            width: 88%;
+        }
+    }
+    
+    #Bio
+    {
+        width: 100%;
+        height: 100%;
+    }
+    #bio_Bebop
+    {
+        width: 100%;
+        height: 100%;
+        border: 1px solid black;
+        overflow: hidden;
+    }
+    #Bebop
+    {
+        margin-top: 100px;
+    }
+    
+    .API
+    {
+        width: 390px;
+        height: 800px;
+    }
+    .result
+    {
+        width: 170px;
+        height: 200px;
+    }
+    button
+    {
+        width: 150px;
+    }
+    .result
+    {
+        font-size: 20px;
+    }
+  }
+
+
+
+  

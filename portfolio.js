@@ -1,7 +1,7 @@
 const cat_btn = document.getElementById('cat_btn');
-const dog_btn = document.getElementById('fact_btn');
+const fact_btn = document.getElementById('fact_btn');
 const cat_result = document.getElementById('cat_result');
-const dog_result = document.getElementById('fact_result');
+const fact_result = document.getElementById('fact_result');
 
 cat_btn.addEventListener('click', getRandomCat);
 fact_btn.addEventListener('click', getRandomFact);
@@ -19,7 +19,7 @@ function getRandomFact() {
 		.then(res => res.text())
 		.then(data => {
 			let fact = JSON.parse(data).text
-            dog_result.innerHTML = fact;
+            fact_result.innerHTML = fact;
             console.log(fact)
 			
 		});
