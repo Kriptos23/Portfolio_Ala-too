@@ -197,29 +197,40 @@ button:focus {
 
 #bio_Bebop
 {
-    width: 2100px;
-    height: 300px;
+    width: 100%;
+    height: 100%;
     border: 1px solid black;
     overflow: hidden;
 }
 
 #Bio
 {
-    width: 1050px;
-    height: 300px;
+    width: 35%;
+    height: 100%;
     line-height: 2;
     float: left;
     border: 1px solid red;
 }
-#skills
-{
 
-    line-height: 2;
-    float:none;
+#Bebop
+{
+    width: 65%;
+    height: 100%;
+    float: left;
     border: 1px solid green;
+    overflow:hidden;
 }
 
-
+#Bebop_video
+{
+    width: 50%;
+    float: left;
+}
+#Bebop_info
+{
+    width: 50%;
+    float: left;
+}
 
   /* Here is css for phones*/
   @media only screen and ( max-width: 391px) 
