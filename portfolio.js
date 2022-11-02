@@ -19,10 +19,11 @@ function getRandomFact() {
 		.then(res => res.text())
 		.then(data => {
 			let fact = JSON.parse(data).text
+	
             fact_result.innerHTML = fact;
-            console.log(fact)
+            
 			
-		});
+		})
 }
 
 var clicks = 0;
