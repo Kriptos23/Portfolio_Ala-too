@@ -33,5 +33,22 @@ function button()
   clicks++;
   console.log(clicks);
   document.getElementsByClassName("Clicker")[0].firstChild.data = "Clicks: " + clicks;
+
+  if(clicks == 8)
+{
+	window.open('https://pbs.twimg.com/media/CLGV66dUMAALhjv.jpg', '_blank');
 }
+}
+
+if(clicks == 5)
+{
+	window.open('https://pbs.twimg.com/media/CLGV66dUMAALhjv.jpg', '_blank');
+}
+
+function randomColor() {
+	var color = '#' + Math.random().toString(16).substr(2, 6);
+	document.getElementById("clickbutton").style.backgroundColor = color;
+  
+
+  }
 
