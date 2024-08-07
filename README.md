@@ -1,4 +1,6 @@
 # Portfolio_Ala-too
+It is my first experience with html css so this website is very ugly, yet I like it anyways
+
 Project for Ala-too
 link to a website: kriptos23.github.io/Portfolio_Ala-too/
 
